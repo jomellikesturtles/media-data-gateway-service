@@ -1,0 +1,9 @@
+grpc:
+  server:
+    port: 9090
+#    enabled: true
+    enable-reflection: true
+#
+#
+#server:
+#  port: 8082
