@@ -1,9 +1,20 @@
 grpc:
   server:
     port: 9090
-#    enabled: true
     enable-reflection: true
-#
-#
-#server:
-#  port: 8082
+
+spring:
+  application:
+    name: media-data-gateway-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mdb_prod?currentSchema=public
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true

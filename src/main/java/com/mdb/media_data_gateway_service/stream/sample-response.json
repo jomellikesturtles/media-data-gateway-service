@@ -1,0 +1,115 @@
+{
+  "status": "ok",
+  "status_message": "Query was successful",
+  "data": {
+    "movie_count": 1,
+    "limit": 20,
+    "page_number": 1,
+    "movies": [
+      {
+        "id": 1372,
+        "url": "https://yts.lt/movies/guardians-of-the-galaxy-2014?hdpleWIFFlnda93Vht7NXqxHhNiB3Fvok9UtU12hXnD1g04",
+        "imdb_code": "tt2015381",
+        "title": "Guardians of the Galaxy",
+        "title_english": "Guardians of the Galaxy",
+        "title_long": "Guardians of the Galaxy (2014)",
+        "slug": "guardians-of-the-galaxy-2014",
+        "year": 2014,
+        "rating": 8,
+        "runtime": 121,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Comedy",
+          "Sci-Fi"
+        ],
+        "summary": "After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team of space heroes known as the \"Guardians of the Galaxy\" to save the galaxy.—James Hake",
+        "description_full": "After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team of space heroes known as the \"Guardians of the Galaxy\" to save the galaxy.—James Hake",
+        "synopsis": "After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team of space heroes known as the \"Guardians of the Galaxy\" to save the galaxy.—James Hake",
+        "yt_trailer_code": "3CqymRQ1uUU",
+        "language": "en",
+        "mpa_rating": "",
+        "background_image": "https://yts.lt/assets/images/movies/Guardians_of_the_Galaxy_2014/background.jpg",
+        "background_image_original": "https://yts.lt/assets/images/movies/Guardians_of_the_Galaxy_2014/background.jpg",
+        "small_cover_image": "https://yts.lt/assets/images/movies/Guardians_of_the_Galaxy_2014/small-cover.jpg",
+        "medium_cover_image": "https://yts.lt/assets/images/movies/Guardians_of_the_Galaxy_2014/medium-cover.jpg",
+        "large_cover_image": "https://yts.lt/assets/images/movies/Guardians_of_the_Galaxy_2014/large-cover.jpg",
+        "state": "ok",
+        "torrents": [
+          {
+            "url": "https://yts.lt/torrent/download/45528B34F2B9E813B1A794D3666E4C6FA7073793?hdpleWIFFlnda93Vht7NXqxHhNiB3Fvok9UtU12hXnD1g04",
+            "hash": "45528B34F2B9E813B1A794D3666E4C6FA7073793",
+            "quality": "3D",
+            "type": "bluray",
+            "is_repack": "0",
+            "video_codec": "x264",
+            "bit_depth": "8",
+            "audio_channels": "2.0",
+            "seeds": 4,
+            "peers": 2,
+            "size": "1.85 GB",
+            "size_bytes": 1986422374,
+            "date_uploaded": "2015-11-01 22:08:28",
+            "date_uploaded_unix": 1446412108
+          },
+          {
+            "url": "https://yts.lt/torrent/download/836D2E8C6350E4CE3800E812B60DE53A63FEB027?hdpleWIFFlnda93Vht7NXqxHhNiB3Fvok9UtU12hXnD1g04",
+            "hash": "836D2E8C6350E4CE3800E812B60DE53A63FEB027",
+            "quality": "720p",
+            "type": "bluray",
+            "is_repack": "0",
+            "video_codec": "x264",
+            "bit_depth": "8",
+            "audio_channels": "2.0",
+            "seeds": 31,
+            "peers": 4,
+            "size": "870.99 MB",
+            "size_bytes": 913299210,
+            "date_uploaded": "2015-10-31 23:46:44",
+            "date_uploaded_unix": 1446331604
+          },
+          {
+            "url": "https://yts.lt/torrent/download/11A2AC68A11634E980F265CB1433C599D017A759?hdpleWIFFlnda93Vht7NXqxHhNiB3Fvok9UtU12hXnD1g04",
+            "hash": "11A2AC68A11634E980F265CB1433C599D017A759",
+            "quality": "1080p",
+            "type": "bluray",
+            "is_repack": "0",
+            "video_codec": "x264",
+            "bit_depth": "8",
+            "audio_channels": "2.0",
+            "seeds": 100,
+            "peers": 53,
+            "size": "1.85 GB",
+            "size_bytes": 1986422374,
+            "date_uploaded": "2015-10-31 23:46:47",
+            "date_uploaded_unix": 1446331607
+          },
+          {
+            "url": "https://yts.lt/torrent/download/E89E735036A846358957A1CC6F363FC131D85B7A?hdpleWIFFlnda93Vht7NXqxHhNiB3Fvok9UtU12hXnD1g04",
+            "hash": "E89E735036A846358957A1CC6F363FC131D85B7A",
+            "quality": "2160p",
+            "type": "web",
+            "is_repack": "",
+            "video_codec": "x265",
+            "bit_depth": "10",
+            "audio_channels": "5.1",
+            "seeds": 86,
+            "peers": 23,
+            "size": "5.39 GB",
+            "size_bytes": 5787468431,
+            "date_uploaded": "2022-03-29 15:16:31",
+            "date_uploaded_unix": 1648559791
+          }
+        ],
+        "date_uploaded": "2015-10-31 23:46:44",
+        "date_uploaded_unix": 1446331604
+      }
+    ]
+  },
+  "@meta": {
+    "server_time": 1767024318,
+    "server_timezone": "CET",
+    "api_version": 2,
+    "execution_time": "0 ms"
+  }
+}
