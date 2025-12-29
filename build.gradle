@@ -29,9 +29,9 @@ repositories {
 
 ext {
 	set('springGrpcVersion', "0.12.0")
-	grpcVersion = '1.77.0'
-	protobufJavaVersion = '3.25.6'
-//	springGrpcVersion = '0.5.0'
+	// Align gRPC and Protobuf versions with the spring-grpc-dependencies BOM
+	grpcVersion = '1.53.0'
+	protobufJavaVersion = '3.22.2'
 }
 
 dependencies {
@@ -44,11 +44,13 @@ dependencies {
 //	// https://mvnrepository.com/artifact/io.grpc/grpc-stub
 //	implementation("io.grpc:grpc-stub:1.77.0")
 
-
-	implementation "io.grpc:grpc-netty-shaded:${grpcVersion}"
-	implementation "io.grpc:grpc-protobuf:${grpcVersion}"
-	implementation "io.grpc:grpc-stub:${grpcVersion}"
-	implementation "io.grpc:grpc-census:${grpcVersion}"
+	// Versions for these are managed by the spring-grpc-dependencies BOM
+	implementation "io.grpc:grpc-netty-shaded"
+	implementation "io.grpc:grpc-protobuf"
+	implementation "io.grpc:grpc-stub"
+	implementation "io.grpc:grpc-census"
+	implementation 'javax.annotation:javax.annotation-api:1.3.2'
+	implementation "com.google.protobuf:protobuf-java"
 
 	// Protobuf Java runtime
 	implementation "com.google.protobuf:protobuf-java:${protobufJavaVersion}"
