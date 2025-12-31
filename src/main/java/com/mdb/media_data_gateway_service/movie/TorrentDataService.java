@@ -12,13 +12,13 @@ import java.io.IOException;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class MovieDataService {
+public class TorrentDataService {
 
     private final TorrentRepository torrentRepository;
     private final ObjectMapper objectMapper;
 
     @Transactional
-    public int saveMoviesFromJson(String jsonContent) {
+    public int saveTorrentFromJson(String jsonContent) {
         try {
             JsonNode root = objectMapper.readTree(jsonContent);
             // Check structure: root -> data -> movies (array)
@@ -27,13 +27,13 @@ public class MovieDataService {
             if (moviesNode.isMissingNode() || !moviesNode.isArray()) {
                 // Fallback if the input is directly the movie object or list
                 if (root.has("imdb_code")) {
-                    saveMovie(root);
+                    saveTorrent(root);
                     return 1;
                 } else if (root.isArray()) {
                     int count = 0;
                     for (JsonNode node : root) {
                         if (node.has("imdb_code")) {
-                            saveMovie(node);
+                            saveTorrent(node);
                             count++;
                         }
                     }
@@ -48,7 +48,7 @@ public class MovieDataService {
 
             int count = 0;
             for (JsonNode movieNode : moviesNode) {
-                saveMovie(movieNode);
+                saveTorrent(movieNode);
                 count++;
             }
             return count;
@@ -59,7 +59,7 @@ public class MovieDataService {
         }
     }
 
-    private void saveMovie(JsonNode movieNode) {
+    private void saveTorrent(JsonNode movieNode) {
         String imdbCode = movieNode.path("imdb_code").asText();
         if (imdbCode == null || imdbCode.isEmpty()) {
             log.warn("Skipping movie without imdb_code");
@@ -72,7 +72,7 @@ public class MovieDataService {
         torrentRepository.save(entity);
     }
 
-    public String getMovieJson(String imdbId) {
+    public String getTorrentJson(String imdbId) {
         return torrentRepository.findById(imdbId)
                 .map(TorrentEntity::getData)
                 .orElse(null);

@@ -28,7 +28,7 @@ class MovieDataServiceTest {
     private ObjectMapper objectMapper = new ObjectMapper();
 
     @InjectMocks
-    private MovieDataService movieDataService;
+    private TorrentDataService movieDataService;
 
     @Test
     void saveMoviesFromJson_shouldSaveMoviesFromSampleFile() throws Exception {
@@ -37,7 +37,7 @@ class MovieDataServiceTest {
         Path path = Paths.get("src/main/java/com/mdb/media_data_gateway_service/stream/sample-response.json");
         String jsonContent = Files.readString(path);
 
-        int count = movieDataService.saveMoviesFromJson(jsonContent);
+        int count = movieDataService.saveTorrentFromJson(jsonContent);
 
         assertEquals(1, count); // The sample file has 1 movie
 

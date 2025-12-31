@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package movie;
+option java_multiple_files = true;
+option java_package="com.mdb.media_data_gateway_service.grpc";
+option java_outer_classname = "TorrentProto";
+
+message MovieTorrent {
+    string data_json = 1;
+    string imdb_id = 2;
+    string message = 3;
+    int32 count = 4;
+}
+
+service TorrentService {
+    rpc SaveTorrent (MovieTorrent) returns (MovieTorrent);
+    rpc GetTorrent (MovieTorrent) returns (MovieTorrent);
+}
